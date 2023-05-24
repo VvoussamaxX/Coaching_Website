@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coaching Website - Home</title>
+  <link rel="stylesheet" type="text/css" href="Home.css">
+  <link rel="stylesheet" type="text/css" href="Navbar.css">
+  <script src="Home.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a class="company-name" href="Home.html">PerfoEvolution</a>
+      </div>
+      <ul class="navbar-right">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Features.html">Features</a></li>
+        <li><a href="Support.html">Support</a></li>
+        <li><a href="booknow.html">Booknow</a></li>
+        <li><a href="pricing.html">Pay</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Welcome to our Coaching Website</h1>
+      <p>Transform your fitness and achieve your goals with our personalized coaching programs.</p>
+      <a href="#about" class="cta-button" onclick="showLoginForm()">Get Started</a>
+    </section>
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>At our coaching website, we are passionate about empowering individuals to reach their full potential. Our team of experienced coaches and trainers is committed to providing personalized support and guidance to help you achieve your fitness goals. We believe in a holistic approach to training, encompassing workouts, nutrition, and ongoing support. Join our community and embark on a transformative fitness journey with us.</p>
+      <a href="#goals" class="learn-more">Learn More</a>
+    </section>
+    <section id="goals" class="goals">
+      <div class="container">
+        <h2>Our Offerings</h2>
+        <p>Our website is dedicated to providing personalized fitness solutions tailored to our customers' needs. We offer the following services:</p>
+        <ul>
+          <li class="center-text">One-to-One Sessions at Our Center:</li>
+          <ul>
+            <li>Personalized coaching sessions conducted by experienced trainers at our center.</li>
+            <li>Sessions designed to cater to individual requirements and specific fitness goals.</li>
+            <li>Expert guidance and support in skill improvement, physical conditioning, tactical analysis, injury prevention and rehabilitation, nutritional guidance, and mental conditioning.</li>
+          </ul>
+          <li class="center-text">Training Programs for Independent Practice:</li>
+          <ul>
+            <li>Comprehensive training programs for individuals to train independently.</li>
+            <li>Programs designed to improve skills and enhance physical fitness.</li>
+            <li>Customizable programs for different skill levels and fitness goals.</li>
+          </ul>
+        </ul>
+        <a href="#signup" class="goals-button" onclick="showSignupForm()">Sign Up</a>
+      </div>
+    </section>
+    <section id="signup" class="signup-login" style="display: none;">
+      <h2>Sign Up</h2>
+      <p>Create an account to access our premium coaching services:</p>
+      <div class="form-container">
+        <form id="signup-form">
+          <input type="text" id="username" placeholder="Username">
+          <input type="email" id="email" placeholder="Email">
+          <input type="password" id="password" placeholder="Password">
+          <button type="submit" class="cta-button">Sign Up</button>
+        </form>
+      </div>
+      <p>Already have an account? <a href="#login" onclick="showLoginForm()">Login</a></p>
+    </section>
+    <section id="login" class="login">
+      <h2>Login</h2>
+      <p>Login with your username and password:</p>
+      <div class="form-container">
+        <form id="login-form">
+          <input type="text" id="username" placeholder="Username">
+          <input type="password" id="password" placeholder="Password">
+          <button type="submit" class="cta-button">Login</button>
+        </form>
+      </div>
+      <p>Don't have an account? <a href="#signup" onclick="showSignupForm()">Register</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Coaching Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>

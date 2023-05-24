@@ -1,0 +1,211 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero Section Styles */
+
+.hero {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 300px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+/* About Section Styles */
+
+.about {
+  background-color: #fff;
+  text-align: center;
+  padding: 250px 20px;
+}
+
+.about h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+  padding: 0 40px; /* Add padding on the left and right */
+}
+
+
+.learn-more {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+/* Goals Section Styles */
+
+.goals {
+  background-color: #f2f2f2;
+  padding: 80px 20px;
+}
+
+.goals h2 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.goals p {
+ font-size: 18px;
+  color: #555;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.goals ul {
+  margin-bottom: 40px;
+  list-style: none; /* Remove bullet points */
+  text-align: center;
+  justify-content: center;
+}
+
+.goals li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.goals-button {
+  display: block;
+  margin: 20px auto; /* Set margin to auto to center horizontally */
+  width: fit-content; /* Make the button width fit its content */
+  padding: 12px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+}
+.goals li.center-text {
+  text-align: center; /* Center the text */
+  font-family: Georgia, 'Times New Roman', Times, serif, Arial, sans-serif; /* Replace "Your Custom Font" with the desired font name */
+  font-size: 24px; /* Adjust the font size as needed */
+}
+
+.learn-more {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+/* Signup and Login Section Styles */
+
+.signup-login {
+  background-color: #fff;
+  text-align: center;
+  padding: 250px 20px;
+  display: none;
+}
+
+.login {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 280px 20px;
+}
+
+.signup-login h2,
+.login h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.signup-login p,
+.login p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-container input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}

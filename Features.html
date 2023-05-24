@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coaching Website - Features</title>
+  <link rel="stylesheet" type="text/css" href="Navbar.css">
+  <link rel="stylesheet" type="text/css" href="booknow.css">
+  <link rel="stylesheet" type="text/css" href="features.css">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a class="company-name" href="Home.html">PerfoEvolution</a>
+      </div>
+      <ul class="navbar-right">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Features.html">Features</a></li>
+        <li><a href="Support.html">Support</a></li>
+        <li><a href="booknow.html">Booknow</a></li>
+        <li><a href="pricing.html">Pay</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="features">
+      <div class="feature-grid">
+        <div class="feature-item">
+          <h3>Skill Improvement</h3>
+          <div class="feature-image">
+            <img src="Images/Neymar.jpeg" alt="Skill Improvement">
+          </div>
+          <div class="feature-buttons">
+            <a href="#" class="cta-button" onclick="addToCart('Skill Improvement', 15)">Add to Cart</a>
+          </div>
+        </div>
+        <div class="feature-item">
+          <h3>Physical Conditioning</h3>
+          <div class="feature-image">
+            <img src="Images/Goretzka.jpeg" alt="Physical Conditioning">
+          </div>
+          <div class="feature-buttons">
+            <a href="#" class="cta-button" onclick="addToCart('Physical Conditioning', 15)">Add to Cart</a>
+          </div>
+        </div>
+        <div class="feature-item">
+          <h3>Tactical Analysis</h3>
+          <div class="feature-image">
+            <img src="Images/guardiola.jpeg" alt="Tactical Analysis">
+          </div>
+          <div class="feature-buttons">
+            <a href="#" class="cta-button" onclick="addToCart('Tactical Analysis', 15)">Add to Cart</a>
+          </div>
+        </div>
+        <div class="feature-item">
+          <h3>Injury Prevention and Rehabilitation</h3>
+          <div class="feature-image">
+            <img src="Images/Busauets.jpeg" alt="Injury Prevention and Rehabilitation">
+          </div>
+          <div class="feature-buttons">
+            <a href="#" class="cta-button" onclick="addToCart('Injury Prevention and Rehabilitation', 15)">Add to Cart</a>
+          </div>
+        </div>
+        <div class="feature-item">
+          <h3>Nutritional Guidance</h3>
+          <div class="feature-image">
+            <img src="Images/lewandowski.jpeg" alt="Nutritional Guidance">
+          </div>
+          <div class="feature-buttons">
+            <a href="#" class="cta-button" onclick="addToCart('Nutritional Guidance', 15)">Add to Cart</a>
+          </div>
+        </div>
+        <div class="feature-item">
+          <h3>Mental Conditioning</h3>
+          <div class="feature-image">
+            <img src="Images/dembele.jpeg" alt="Mental Conditioning">
+          </div>
+          <div class="feature-buttons">
+            <a href="#" class="cta-button" onclick="addToCart('Mental Conditioning', 15)">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="buy-now-section">
+      <div class="feature-buttons">
+        <a href="#" class="cta-button" onclick="addToCart('Full Program', 200)">Buy Program</a>
+      </div>
+    </section>
+    <section class="cart">
+      <h2>Cart</h2>
+      <div class="total-price">
+        <p>Total: <span id="total">0</span>$</p>
+      </div>
+      <div class="receipt" id="receipt"></div>
+    </section>
+    <section class="booking">
+        <h2>Book Now</h2>
+        <div class="coach-selection">
+          <label for="coach">Select a Coach:</label>
+          <select id="coach">
+            <option value="Oussama">Oussama</option>
+            <option value="Abdou">Abdou</option>
+            <option value="Anas">Anas</option>
+            <option value="Rayane">Rayane</option>
+            <option value="Iliass">Iliass</option>
+          </select>
+        </div>
+        <div class="day-selection">
+          <label for="day">Select a Day:</label>
+          <select id="day">
+          </select>
+        </div>
+        <div class="time-selection">
+          <label for="time">Select a Time:</label>
+          <select id="time">
+          </select>
+        </div>
+        <button id="bookButton">Book</button>
+      </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Coaching Website. All rights reserved.</p>
+  </footer>
+  <script src="Features.js"></script>
+  <script src="booknow.js"></script>
+</body>
+</html>
+
+
+
+
