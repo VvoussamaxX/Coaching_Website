@@ -149,6 +149,7 @@
     document.getElementById("booking").style.display = "block";
   }
 
-    
-  
+
+
+
   

@@ -17,8 +17,8 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <link href="css/styles.css" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="css/Home.css">
+        <link href="css/Bootstrap_styles.css" rel="stylesheet" />
+       <link rel="stylesheet" type="text/css" href="css/Home.css">
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...YOUR_INTEGRITY_HASH...==" crossorigin="anonymous" />
 
@@ -58,19 +58,25 @@
           
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">PerfoEvolution</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Features.html">Features</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Support.html">Support</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
-                    </ul>
-                </div>
+          <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top"><i class="fas fa-chart-line"></i> PerfoEvolution</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                <li class="nav-item"><a class="nav-link" href="Home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="Features.html"><i class="fas fa-cogs"></i> Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="Support.html"><i class="fas fa-life-ring"></i> Support</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Features.html#cart"><i class="fas fa-shopping-cart"></i> Cart</a>
+                </li>
+              </ul>
             </div>
+          </div>
         </nav>
+        
         <!-- Header-->
         <header class="masterhead bg-dark py-5" style="background-image:  linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url('assets/img/Images/foot.jpeg'); background-size: cover;">
             <div class="container px-4 px-lg-5 my-5">
@@ -84,146 +90,190 @@
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
+                  <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <div class="card-image-wrapper">
                             <img class="card-img-top" src="assets/img/Images/Neymar.png" alt="Skill Improvement" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Skill Improvement</h5>
-                                    <!-- Product price-->
-                                    $15.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a href="#booking" class="cta-button btn btn-outline-orange mt-auto">Book Now</a></div>
+                            <!-- Product description on hover-->
+                            <div class="card-description">
+                                <p>Enhance your skills with our Skill Improvement program. Our program is designed to help you improve and excel in your chosen field. Book now to take your skills to the next level!</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="assets/img/Images/lewandowski.png" alt="Nutritional Guidance" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Nutritional Guidance</h5>
-                                    <!-- Product price-->
-                                    <span class="text-decoration-line-through">$25.00</span>
-                                    $15.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a href="#booking" class="cta-button btn btn-outline-orange mt-auto">Book Now</a></div>
-        
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Skill Improvement</h5>
+                                <!-- Product price-->
+                                $15.00
                             </div>
                         </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="assets/img/Images/guardiola.png" alt="Tactical Analysis" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Tactical Analysis</h5>
-                                    <!-- Product price-->
-                                    <span class=" text-decoration-line-through">$30.00</span>
-                                    $15.00
-                                </div>
-                            </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a href="#booking" class="cta-button btn btn-outline-orange mt-auto">Book Now</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="assets/img/Images/Busauets.png" alt="Injury Prevention and Rehabilitation" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Injury Prevention and Rehabilitation</h5>
-                                    <!-- Product price-->
-                                    $15.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a href="#booking" class="cta-button btn btn-outline-orange mt-auto">Book Now</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="assets/img/Images/Goretzka.png" alt="Physical Conditioning" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Physical Conditioning</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    $15.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a href="#booking" class="cta-button btn btn-outline-orange mt-auto">Book Now</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="assets/img/Images/dembele.png" alt="Mental Conditioning" />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Mental Conditioning</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    $15.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a href="#booking" class="cta-button btn btn-outline-orange mt-auto">Book Now</a></div>
-                            </div>
-                        </div>
+                              <div class="text-center"><a href="#booking" class="cta-button btn btn-outline-orange mt-auto">Book Now</a></div>
+      
+                          </div>                        
                     </div>
                 </div>
-            </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <!-- Product image-->
+                        <div class="card-image-wrapper">
+                            <img class="card-img-top" src="assets/img/Images/lewandowski.png" alt="Nutritional Guidance" />
+                            <!-- Product description on hover-->
+                            <div class="card-description">
+                                <p>Get expert Nutritional Guidance to optimize your performance. Our program offers personalized dietary plans and advice to help you achieve your fitness goals. Book now and fuel your success!</p>
+                            </div>
+                        </div>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Nutritional Guidance</h5>
+                                <!-- Product price-->
+                                <span class="text-decoration-line-through">$25.00</span>
+                                $15.00
+                            </div>
+                        </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><a href="#booking" class="cta-button btn btn-outline-orange mt-auto">Book Now</a></div>
+      
+                          </div>                            
+                    </div>
+                </div>     
+                <div class="col mb-5">
+                  <div class="card h-100">
+                      <!-- Sale badge-->
+                      <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                      <!-- Product image-->
+                      <div class="card-image-wrapper">
+                          <img class="card-img-top" src="assets/img/Images/guardiola.png" alt="Tactical Analysis" />
+                          <!-- Product description on hover-->
+                          <div class="card-description">
+                              <p>Master the game with Tactical Analysis. Our experts provide in-depth analysis of game strategies and techniques to help you become a more tactical player. Book now and elevate your game!</p>
+                          </div>
+                      </div>
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="fw-bolder">Tactical Analysis</h5>
+                              <!-- Product price-->
+                              <span class="text-decoration-line-through">$30.00</span>
+                              $15.00
+                          </div>
+                      </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><a href="#booking" class="cta-button btn btn-outline-orange mt-auto">Book Now</a></div>
+      
+                          </div>                          
+                  </div>
+              </div>
+              
+              <div class="col mb-5">
+                  <div class="card h-100">
+                      <!-- Product image-->
+                      <div class="card-image-wrapper">
+                          <img class="card-img-top" src="assets/img/Images/Busauets.png" alt="Injury Prevention" />
+                          <!-- Product description on hover-->
+                          <div class="card-description">
+                              <p>Learn essential techniques and exercises to minimize the risk of injuries and ensure a long and successful sporting career. Book now and stay fit and injury-free!</p>
+                          </div>
+                      </div>
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="fw-bolder">Injury Prevention</h5>
+                              <!-- Product price-->
+                              $15.00
+                          </div>
+                      </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><a href="#booking" class="cta-button btn btn-outline-orange mt-auto">Book Now</a></div>
+      
+                          </div>                          
+                  </div>
+              </div>
+              
+              <div class="col mb-5">
+                  <div class="card h-100">
+                      <!-- Product image-->
+                      <div class="card-image-wrapper">
+                          <img class="card-img-top" src="assets/img/Images/Goretzka.png" alt="Physical Conditioning" />
+                          <!-- Product description on hover-->
+                          <div class="card-description">
+                              <p>Achieve peak physical performance. Our trainers will guide you through tailored workouts and exercises to improve your strength, endurance, and overall fitness. Book now and unleash your potential!</p>
+                          </div>
+                      </div>
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="fw-bolder">Physical Conditioning</h5>
+                              <!-- Product reviews-->
+                              <div class="d-flex justify-content-center small text-warning mb-2">
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                              </div>
+                              <!-- Product price-->
+                              $15.00
+                          </div>
+                      </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><a href="#booking" class="cta-button btn btn-outline-orange mt-auto">Book Now</a></div>
+      
+                          </div>                          
+                  </div>
+              </div>
+              
+              <div class="col mb-5">
+                  <div class="card h-100">
+                      <!-- Product image-->
+                      <div class="card-image-wrapper">
+                          <img class="card-img-top" src="assets/img/Images/dembele.png" alt="Mental Conditioning" />
+                          <!-- Product description on hover-->
+                          <div class="card-description">
+                              <p>Train your mind for success with our Mental Conditioning program. Develop mental toughness, focus, and resilience to perform at your best under pressure. Book now and gain a competitive edge!</p>
+                          </div>
+                      </div>
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="fw-bolder">Mental Conditioning</h5>
+                              <!-- Product reviews-->
+                              <div class="d-flex justify-content-center small text-warning mb-2">
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                              </div>
+                              <!-- Product price-->
+                              $15.00
+                          </div>
+                      </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><a href="#booking" class="cta-button btn btn-outline-orange mt-auto">Book Now</a></div>
+      
+                          </div>                          
+                  </div>
+              </div>
+              
+
+                    
         </section>
         <section class="booking" id="booking">
             <h5 style="text-align: center;font-weight: bold;font-style: italic;">Our center operates on a weekly booking system to accommodate the fluctuating availabilities of our coaches.</h5>
@@ -238,7 +288,7 @@
                 <option value="Oussama">Oussama</option>
                 <option value="Ilias">Ilias</option>
                 <option value="Rayane">Rayane</option>
-                <option value="Ashley">Ashley</option>
+                <option value="Dan">Dan</option>
                 <option value="Dal">Dal</option>
                 <option value="Laura">Laura</option>
                 
@@ -258,7 +308,7 @@
                 <option value="Skill Improvement">Skill Improvement</option>
                 <option value="Nutritional Guidance">Nutritional Guidance</option>
                 <option value="Tactical Analysis">Tactical Analysis</option>
-                <option value="Injury Prevention and Rehabilitation">Injury Prevention and Rehabilitation</option>
+                <option value="Injury Prevention">Injury Prevention</option>
                 <option value="Physical Conditioning">Physical Conditioning</option>
                 <option value="Mental Conditioning">Mental Conditioning</option>
               </select>
@@ -305,8 +355,8 @@
     <div class="row cart g-5" id="cart">
         <div class="col-md-5 col-lg-4 order-md-last">
           <h4 class="d-flex justify-content-between align-items-center mb-3">
-            <span class="text-primary">Your cart</span>
-            <h2>Cart</h2>
+            <span class="text-primary"><i class="bi bi-cart-fill"></i> Your cart</span>
+            <h2><i class="bi bi-cart-check-fill"></i> Cart</h2>
             <div class="total-price">
               <p>Total: <span id="total">0</span>$</p>
             </div>
@@ -314,38 +364,37 @@
               <p id="cart-message">Nothing on your cart</p>
             </div>
             <div class="button-container">
-              <a href="#booking" class="cta-button btn btn-outline-orange mt-auto" onclick="goToBooking()">Book Another Session</a>
-            </div>
+              <a href="#booking" class="cta-button btn btn-outline-orange mt-auto" onclick="goToBooking()"><i class="bi bi-plus-circle-fill"></i> Book Another Session</a>
+            </div>            
         </div>
         <div class="col-md-7 col-lg-8">
-          <h4 class="mb-3">Billing address</h4>
+          <h4 class="mb-3"><i class="bi bi-credit-card-2-front"></i> Billing address</h4>
           <form class="needs-validation was-validated" novalidate="">
             <div class="row g-3">
               <div class="col-sm-6">
                 <label for="firstName" class="form-label">First name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <input type="text" class="form-control" id="firstName" placeholder="firstName" value="" required="">
                 <div class="invalid-feedback">
                   Valid first name is required.
                 </div>
               </div>
-  
+          
               <div class="col-sm-6">
                 <label for="lastName" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <input type="text" class="form-control" id="lastName" placeholder="Last name" value="" required="">
                 <div class="invalid-feedback">
                   Valid last name is required.
                 </div>
               </div>
-
-
+          
               <div class="col-12">
-                <label for="email" class="form-label">Email </label>
-                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com" required="">
                 <div class="invalid-feedback">
                   Please enter a valid email address for shipping updates.
                 </div>
               </div>
-  
+              
               <div class="col-12">
                 <label for="address" class="form-label">Address</label>
                 <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
@@ -353,70 +402,63 @@
                   Please enter your shipping address.
                 </div>
               </div>
-  
-
+          
               <div class="col-md-5">
                 <label for="country" class="form-label">Country</label>
-                <select class="form-select" id="country" required="">
-                  <option value="">Choose...</option>
-                  <option>United States</option>
-                </select>
+                <input type="text" class="form-control" id="country" placeholder="Enter your country" required="">
                 <div class="invalid-feedback">
-                  Please select a valid country.
+                  Please enter a valid country.
                 </div>
               </div>
-  
+              
               <div class="col-md-4">
-                <label for="state" class="form-label">State</label>
-                <select class="form-select" id="state" required="">
-                  <option value="">Choose...</option>
-                  <option>California</option>
-                </select>
+                <label for="state" class="form-label">State/Province</label>
+                <input type="text" class="form-control" id="state" placeholder="Enter your state or province" required="">
                 <div class="invalid-feedback">
-                  Please provide a valid state.
+                  Please enter a valid state or province.
                 </div>
               </div>
-  
+          
               <div class="col-md-3">
                 <label for="zip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                <input type="text" class="form-control" id="zip" placeholder="x1x-1x1" required="">
                 <div class="invalid-feedback">
                   Zip code required.
                 </div>
               </div>
             </div>
-  
+          
             <hr class="my-4">
-  
+          
             <div class="form-check">
               <input type="checkbox" class="form-check-input" id="same-address">
-              <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+              <label class="form-check-label" for="same-address"><i class="bi bi-geo-alt-fill"></i> Shipping address is the same as my billing address</label>
             </div>
-  
+          
             <div class="form-check">
               <input type="checkbox" class="form-check-input" id="save-info">
-              <label class="form-check-label" for="save-info">Save this information for next time</label>
+              <label class="form-check-label" for="save-info"><i class="bi bi-save-fill"></i> Save this information for next time</label>
             </div>
-  
+          
             <hr class="my-4">
-  
-            <h4 class="mb-3">Payment</h4>
-  
+          
+            <h4 class="mb-3"><i class="bi bi-credit-card"></i> Payment</h4>
+          
             <div class="my-3">
               <div class="form-check">
                 <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
-                <label class="form-check-label" for="credit">Credit card</label>
+                <label class="form-check-label" for="credit"><i class="bi bi-credit-card-fill"></i> Credit card</label>
               </div>
               <div class="form-check">
                 <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
-                <label class="form-check-label" for="debit">Debit card</label>
+                <label class="form-check-label" for="debit"><i class="bi bi-credit-card-2-back-fill"></i> Debit card</label>
               </div>
               <div class="form-check">
                 <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
-                <label class="form-check-label" for="paypal">PayPal</label>
+                <label class="form-check-label" for="paypal"><i class="bi bi-paypal"></i> PayPal</label>
               </div>
             </div>
-  
+          
             <div class="row gy-3">
               <div class="col-md-6">
                 <label for="cc-name" class="form-label">Name on card</label>
@@ -426,7 +468,7 @@
                   Name on card is required
                 </div>
               </div>
-  
+          
               <div class="col-md-6">
                 <label for="cc-number" class="form-label">Credit card number</label>
                 <input type="text" class="form-control" id="cc-number" placeholder="" required="">
@@ -434,7 +476,7 @@
                   Credit card number is required
                 </div>
               </div>
-  
+          
               <div class="col-md-3">
                 <label for="cc-expiration" class="form-label">Expiration</label>
                 <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
@@ -442,7 +484,7 @@
                   Expiration date required
                 </div>
               </div>
-  
+          
               <div class="col-md-3">
                 <label for="cc-cvv" class="form-label">CVV</label>
                 <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
@@ -451,41 +493,47 @@
                 </div>
               </div>
             </div>
-  
+          
             <hr class="my-4">
-  
-            <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+          
+            <button class="w-100 btn btn-primary btn-lg" type="submit"><i class="bi bi-arrow-right"></i> Continue to checkout</button>
           </form>
+          
         </div>
       </div>
   </section>
 
 <!-- Footer-->
 <footer class="py-2">
-    <div class="container px-4 px-lg-5">
-      <div class="small text-center footer-content">
-        <div class="footer-info">
-          <div class="footer-info-row">
-            <div class="footer-info-item">
-              <i class="fas fa-map-marker-alt orange-icon"></i>
-              <span class="orange-text">Adresse:</span> 370 Rue de Pointe Gatineau, Gatineau, QC J8T 0B1, Canada
-            </div>
-            <div class="footer-info-item">
-              <i class="fas fa-clock orange-icon"></i>
-              <span class="orange-text">Horaire d'ouverture:</span> 9h à 21h
-            </div>
-            <div class="footer-info-item">
-              <i class="fas fa-phone orange-icon"></i>
-              <span class="orange-text">Numéro de téléphone:</span> 613 869 4632
-            </div>
+  <div class="container px-4 px-lg-5">
+    <div class="small text-center footer-content">
+      <div class="footer-info">
+        <div class="footer-info-row">
+          <div class="footer-info-item">
+            <i class="fas fa-map-marker-alt orange-icon"></i>
+            <span class="orange-text">Adresse:</span> 370 Rue de Pointe Gatineau, Gatineau, QC J8T 0B1, Canada
+          </div>
+          <div class="footer-info-item">
+            <i class="fas fa-clock orange-icon"></i>
+            <span class="orange-text">Horaire d'ouverture:</span> 9h à 21h
+          </div>
+          <div class="footer-info-item">
+            <i class="fas fa-phone orange-icon"></i>
+            <span class="orange-text">Numéro de téléphone:</span> 613 869 4632
           </div>
         </div>
-        <div class="footer-copyright">
-          © 2023 - PerfoEvolution
-        </div>
+      </div>
+      <div class="footer-social-icons">
+          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+      </div>
+      <div class="footer-copyright">
+        © 2023 - PerfoEvolution
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
   
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -495,7 +543,8 @@
         <script src="js/booknow.js"></script>
         <script src="js/confirmation.js"></script>
         <script src="js/cart.js"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/country-state-picker@1.2.0/dist/csp.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/country-state-picker@1.2.0/dist/cspSelects.js"></script>
         <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     </body>

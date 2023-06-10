@@ -1,4 +1,68 @@
-/*----------------Home page-----------------------*/
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/Images/foot.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Apply fixed background */
+  background-size: cover;
+}
+
+section#about {
+  padding-top: 0px;
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/Images/foot.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Apply fixed background */
+  background-size: cover;
+}
+
+header.masterhead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/Images/foot.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+
+}
+
+header.masthead h1, header.masthead .h1 {
+  font-size: 2.25rem;
+}
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.masterhead{
+    height: 10vh;
+    min-height: 20rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0; 
+  }
+  header.masthead p, header.masterhead p{
+    font-size: 1.15rem;
+  }
+  header.masthead h1, header.masthead .h1,  header.masterhead h1, header.masterhead .h1  {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.masthead h1, header.masthead .h1   header.masterhead h1, header.masterhead .h1 {
+    font-size: 3.5rem;
+  }
+}
+#portfolio{
+  padding-left: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 20px;
+
+}
   /* Signup and Login Section Styles */
   section#signup,
   section#login {
@@ -319,12 +383,13 @@ button:hover {
 
     .testimonials {
       padding-top: 60px;
-      padding-bottom: 100px;
+      padding-bottom: 0px;
       color: white;
+    }
+    .rating i {
+      color: #f4623a;
+      font-size: 24px;
 
-      
-
-      /* Rest of your CSS styles for the signup and login sections */
     }
     /*----------------Footer-----------------------*/
     .image-container {
@@ -379,7 +444,9 @@ button:hover {
   .footer-info-item {
     margin: 5px;
   }
-  
+  .footer-copyright{
+    padding-top: 3px;
+  }
   .orange-text {
     color: #f4623a;
   }
@@ -392,3 +459,45 @@ button:hover {
     text-align: center;
   }
   
+  .card-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 250px; /* Adjust the height as needed */
+}
+
+.card-image-wrapper img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.card-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-description p {
+    margin: 0;
+    padding: 0;
+}
+
+.card-description a {
+    margin-top: 15px;
+}
+
+.card-image-wrapper:hover .card-description {
+    opacity: 1;
+}
