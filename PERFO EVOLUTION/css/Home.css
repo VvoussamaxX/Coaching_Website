@@ -1,0 +1,394 @@
+/*----------------Home page-----------------------*/
+  /* Signup and Login Section Styles */
+  section#signup,
+  section#login {
+    background-image: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/Images/Robinni.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Rest of your CSS styles for the signup and login sections */
+  }
+  
+  .signup-login {
+    background-repeat: no-repeat;
+    background-size: 1440px 900px;  
+    text-align: center;
+    
+    padding: 250px 20px;
+    display: none;
+  }
+  
+  .login {
+    background-repeat: no-repeat;
+    background-size: 1440px 900px;  
+    text-align: center;
+    padding: 280px 20px;
+  }
+  
+  .signup-login h2,
+  .login h2 {
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+  }
+  
+  .signup-login p,
+  .login p {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+  }
+  
+  .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-container input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+/*-------------booking--------------------------*/
+.booking {
+  padding: 20px;
+ padding-left: 50px;
+  text-align: left;
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+  
+}
+#sentence{
+  margin-top: 10px;
+}
+.booking h2{
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+.username {
+  margin-bottom: 20px;
+}
+
+.username label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.username input[type="text"] {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.username input[type="text"]:focus {
+  outline: none;
+  border-color: #f4623a;
+  box-shadow: 0 0 5px #f4623a;
+}
+
+.coach-selection,
+.time-selection,
+.day-selection,
+.session-selection{
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+select {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #f4623a;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #f4623a;
+  color: #f4623a;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #f4623a;
+}
+/* Cart styles */
+.cart {
+  text-align: center;
+  min-height: 20rem;
+  padding: 40px;
+}
+
+.total-price {
+  margin-bottom: 20px;
+}
+
+.receipt {
+  display: grid;
+  grid-template-columns: 1fr; /* Adjust the column size as needed */
+  grid-gap: 10px; /* Adjust the gap between items as needed */
+  text-align: center;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 400px;
+  background-color: #f4623a;
+  padding: 20px;
+  border-radius: 4px;
+  color: white;
+}
+
+.receipt-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#receipt p {
+  margin: 0;
+}
+
+#receipt #cart-message {
+  text-align: center;
+}
+
+.receipt-item p {
+  margin: 0;
+}
+
+.receipt-item button {
+  display: block;
+  margin-top: 5px;
+}
+
+.booking {
+  background-image: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url('../assets/img/Images/foot_4.jpeg');
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*  Pay */
+
+.PayNow{
+  margin-top: 100px;
+  background-image: linear-gradient(to bottom, rgba(255, 251, 248, 0.879) 0%, rgba(255, 235, 220, 0.892) 100%), url('../assets/img/Images/foot_6.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 100px;
+}
+
+
+  /*----------------Support-----------------------*/
+
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 100px;
+    }
+    
+    .team-member {
+      text-align: center;
+      width: 250px;
+      margin-bottom: 40px;
+    }
+    
+    .team-member img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+    .rating {
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 160px;
+    }
+    
+    .rating h2 {
+      margin-bottom: 10px;
+    }
+    
+    .rating form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      
+    }
+    
+    .rating-form-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .rating-form-row select {
+      order: 1;
+    }
+    
+    .rating-stars {
+      display: flex;
+      flex-direction: row-reverse; 
+      order: 2;
+    }
+    
+    .rating-stars input[type="radio"] {
+      display: none;
+    }
+    
+    .rating-stars label {
+      cursor: pointer;
+      padding: 5px;
+    }
+    
+    .rating-stars label:before {
+      content: "\2605";
+      font-size: 30px;
+    }
+    
+    .rating-stars input[type="radio"]:checked ~ label:before {
+      color: #f4623a;
+    }
+    
+    .rating-form-row input[type="submit"] {
+      order: 3;
+    }
+    
+    .rating form select,
+    .rating form input[type="submit"] {
+      padding: 10px;
+    }
+    
+    .stars {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    
+    .stars input[type="radio"] {
+      display: none;
+    }
+    
+    .stars label {
+      cursor: pointer;
+      padding: 5px;
+    }
+    
+    .stars label:before {
+      content: "\2605";
+      font-size: 30px;
+    }
+    
+    .stars input[type="radio"]:checked ~ label:before {
+      color: #f4623a;
+    }
+    
+    input[type="radio"] {
+      display: none;
+    }
+    
+    input[type="radio"] + label {
+      color: #ccc;
+    }
+    
+    input[type="radio"]:checked + label {
+      color: #f4623a;
+    }
+    
+ 
+
+    .testimonials {
+      padding-top: 60px;
+      padding-bottom: 100px;
+      color: white;
+
+      
+
+      /* Rest of your CSS styles for the signup and login sections */
+    }
+    /*----------------Footer-----------------------*/
+    .image-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .contact-image {
+      width: 500px; /* Adjust the width as needed */
+      height: auto;
+      margin-right: 20px; /* Adjust the margin as needed */
+    }
+    
+
+
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .footer-info-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  
+  .footer-info-item {
+    margin: 5px;
+  }
+  
+  .orange-text {
+    color: #f4623a;
+  }
+  
+  .orange-icon {
+    margin-right: 5px;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+  }
+  
