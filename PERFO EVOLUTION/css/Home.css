@@ -501,3 +501,21 @@ button:hover {
 .card-image-wrapper:hover .card-description {
     opacity: 1;
 }
+
+.nav-translate{
+  margin-left: 5px;
+}
+.navbar-brand{
+  padding-right: 200px;
+}
+
+.language-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
