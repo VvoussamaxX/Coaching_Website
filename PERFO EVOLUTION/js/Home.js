@@ -1,16 +1,13 @@
-// Function to show the sign-up form and hide the login form
 function showSignupForm() {
   document.getElementById("signup").style.display = "block";
   document.getElementById("login").style.display = "none";
 }
 
-// Function to show the login form and hide the sign-up form
 function showLoginForm() {
   document.getElementById("signup").style.display = "none";
   document.getElementById("login").style.display = "block";
 }
 
-// Function to save sign-up data to localStorage
 function saveSignupData() {
   var username = document.getElementById("signup-username").value;
   var email = document.getElementById("signup-email").value;
@@ -23,10 +20,9 @@ function saveSignupData() {
   };
 
   localStorage.setItem("userData", JSON.stringify(userData));
-  showLoginForm(); // Show the login form after signing up
+  showLoginForm(); 
 }
 
-// Function to retrieve sign-up data from localStorage and populate the sign-up form
 function loadSignupData() {
   var userData = localStorage.getItem("userData");
 
@@ -39,14 +35,12 @@ function loadSignupData() {
   }
 }
 
-// Function to handle sign-up form submission
 document.getElementById("signup-form").addEventListener("submit", function (event) {
   event.preventDefault();
   saveSignupData();
   alert("Sign up successful!");
 });
 
-// Function to handle login form submission
 document.getElementById("login-form").addEventListener("submit", function (event) {
   event.preventDefault();
 
@@ -63,7 +57,7 @@ document.getElementById("login-form").addEventListener("submit", function (event
 
     if (enteredUsername === savedUsername && enteredPassword === savedPassword) {
       alert("Login successful!");
-      window.location.href = "Features.html"; // Redirect to Features.html after successful login
+      window.location.href = "Features.html"; 
     } else {
       alert("Invalid username or password. Please try again.");
     }
@@ -72,5 +66,4 @@ document.getElementById("login-form").addEventListener("submit", function (event
   }
 });
 
-// Load sign-up data when the page loads
 loadSignupData();

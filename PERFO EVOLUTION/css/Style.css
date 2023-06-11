@@ -1,10 +1,31 @@
+/* Nav */
+
+.nav-translate{
+  margin-left: 5px;
+}
+.navbar-brand{
+  padding-right: 200px;
+}
+
+.language-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+/* Header */
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/Images/foot.jpeg");
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Apply fixed background */
+  background-attachment: fixed; 
   background-size: cover;
 }
 
@@ -13,8 +34,16 @@ section#about {
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/Images/foot.jpeg");
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Apply fixed background */
+  background-attachment: fixed; 
   background-size: cover;
+}
+
+.orange-text {
+  color: #f4623a;
+}
+
+.orange-icon {
+  margin-right: 5px;
 }
 
 header.masterhead {
@@ -56,20 +85,19 @@ header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
   }
 }
-#portfolio{
-  padding-left: 20px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-right: 20px;
 
+.testimonials {
+  padding-top: 60px;
+  padding-bottom: 0px;
+  color: white;
 }
+
   /* Signup and Login Section Styles */
   section#signup,
   section#login {
     background-image: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/Images/Robinni.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* Rest of your CSS styles for the signup and login sections */
   }
   
   .signup-login {
@@ -85,7 +113,7 @@ header.masthead h1, header.masthead .h1 {
     background-repeat: no-repeat;
     background-size: 1440px 900px;  
     text-align: center;
-    padding: 280px 20px;
+    padding: 180px 20px;
   }
   
   .signup-login h2,
@@ -117,7 +145,58 @@ header.masthead h1, header.masthead .h1 {
     border: 1px solid #ccc;
   }
   
+/*-------------portfolio--------------------------*/
+#portfolio{
+  padding-left: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 20px;
+
+}
+.card-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 250px; 
+}
+
+.card-image-wrapper img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-description p {
+  margin: 0;
+  padding: 0;
+}
+
+.card-description a {
+  margin-top: 15px;
+}
+
+.card-image-wrapper:hover .card-description {
+  opacity: 1;
+}
 /*-------------booking--------------------------*/
+
 .booking {
   padding: 20px;
  padding-left: 50px;
@@ -125,6 +204,12 @@ header.masthead h1, header.masthead .h1 {
   margin-top: 10px;
   color: rgb(255, 255, 255);
   
+}
+.booking {
+  background-image: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url('../assets/img/Images/foot_4.jpeg');
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 #sentence{
   margin-top: 10px;
@@ -208,8 +293,8 @@ button:hover {
 
 .receipt {
   display: grid;
-  grid-template-columns: 1fr; /* Adjust the column size as needed */
-  grid-gap: 10px; /* Adjust the gap between items as needed */
+  grid-template-columns: 1fr; 
+  grid-gap: 10px; 
   text-align: center;
   justify-content: center;
   margin: 20px auto;
@@ -243,12 +328,7 @@ button:hover {
   margin-top: 5px;
 }
 
-.booking {
-  background-image: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url('../assets/img/Images/foot_4.jpeg');
-  background-size: 120%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 /*  Pay */
 
 .PayNow{
@@ -379,19 +459,11 @@ button:hover {
       color: #f4623a;
     }
     
- 
-
-    .testimonials {
-      padding-top: 60px;
-      padding-bottom: 0px;
-      color: white;
-    }
     .rating i {
       color: #f4623a;
       font-size: 24px;
 
     }
-    /*----------------Footer-----------------------*/
     .image-container {
       display: flex;
       justify-content: flex-start;
@@ -400,13 +472,13 @@ button:hover {
     }
     
     .contact-image {
-      width: 500px; /* Adjust the width as needed */
+      width: 500px;
       height: auto;
-      margin-right: 20px; /* Adjust the margin as needed */
+      margin-right: 20px;
     }
     
 
-
+    /*----------------Footer-----------------------*/
   /* Footer styles */
   footer {
     background-color: #333;
@@ -447,75 +519,10 @@ button:hover {
   .footer-copyright{
     padding-top: 3px;
   }
-  .orange-text {
-    color: #f4623a;
-  }
-  
-  .orange-icon {
-    margin-right: 5px;
-  }
-  
+
   .footer-copyright {
     text-align: center;
   }
   
-  .card-image-wrapper {
-    position: relative;
-    overflow: hidden;
-    height: 250px; /* Adjust the height as needed */
-}
 
-.card-image-wrapper img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
 
-.card-description {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.card-description p {
-    margin: 0;
-    padding: 0;
-}
-
-.card-description a {
-    margin-top: 15px;
-}
-
-.card-image-wrapper:hover .card-description {
-    opacity: 1;
-}
-
-.nav-translate{
-  margin-left: 5px;
-}
-.navbar-brand{
-  padding-right: 200px;
-}
-
-.language-icon {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #fff;
-  border-radius: 50%;
-  padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 9999;
-}
